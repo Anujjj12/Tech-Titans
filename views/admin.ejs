@@ -1,0 +1,67 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w-full min-h-screen bg-zinc-900 text-white p-10">
+        <div class="flex w-full justify-end">
+            <a href="/logout" class="bg-yellow-600 rounded-md px-3 py-2 inline-block"> Logout </a>
+        </div>
+        <h3 class="text-3xl mb-5"> Hello , <%= admin.name %>🙂 </h3>
+
+        <a href="/studentRegister" class="bg-blue-600 rounded-md px-3 py-2 inline-block"> Create Student </a>
+        <a href="/teacherRegister" class="bg-blue-600 rounded-md px-3 py-2 inline-block"> Create Teacher </a>
+        </div>
+    </div>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dashboard</title>
+    <style>
+        /* Custom colors */
+        :root {
+            --dark-blue: #1E3A8A;
+            /* Tailwind's blue-800 */
+            --blue-hover: #1E40AF;
+            /* Tailwind's blue-700 */
+            --yellow-highlight: #FBBF24;
+            /* Tailwind's yellow-400 */
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800 flex items-center justify-center min-h-screen">
+    <div class="bg-white rounded-lg shadow-lg p-10 w-full max-w-md">
+        <div class="flex justify-end mb-5">
+            <a href="/logout"
+                class="bg-yellow-500 hover:bg-yellow-600 text-white rounded-md px-4 py-2 transition duration-200">
+                Logout </a>
+        </div>
+        <h3 class="text-3xl mb-5 text-center font-semibold text-gray-800"> Hello, <%= admin.name %> 🙂 </h3>
+
+        <div class="flex flex-col space-y-4">
+            <a href="/studentRegister"
+                class="bg-blue-600 hover:bg-blue-700 rounded-md px-4 py-2 text-center text-white font-semibold transition duration-200">
+                Create Student </a>
+            <a href="/teacherRegister"
+                class="bg-blue-600 hover:bg-blue-700 rounded-md px-4 py-2 text-center text-white font-semibold transition duration-200">
+                Create Teacher </a>
+        </div>
+    </div>
+</body>
+
+</html>
